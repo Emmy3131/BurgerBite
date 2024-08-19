@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav{
+    margin: 0 40px;
+}
+.nav-content-container{
+}
+.nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav-logo-container{
+    float: left;
+}
+.nav-logo-container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-logo-box::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.brand{
+    float: left;
+    padding: 40px 5px 0 5px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.fa-burger{
+    color: #f97316;
+}
+.nav-menu{
+    float: left;
+    padding-left: 20%;
+}
+.nav-menu::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav-item{
+    float: left;
+    
+    list-style: none;
+    padding: 40px 0 20px 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: #000;
+}
+.nav-list{
+    content: "";
+    clear: both;
+    display: table;
+}
+.btn-container{
+    float: right;
+    padding-top: 20px;
+}
+.brand-1{
+    float: left;
+    padding: 10px 5px 10px 5px;
+}
+
+
+/*----------btn--------*/
+
+
+.btn-half{
+    padding: 15px 20px;
+}
+.btn{
+    float: left;
+    border: none;
+    border-radius: 4px;
+}
+.btn:not(:last-child){
+    margin-right: 15px;
+}
+.btn-align{
+    color: #fff;
+    text-align: center;
+}
+.btn-blue{
+    background-color: #172554;
+   
+}
+.btn-orange{
+    background-color: #f97316;
+}
