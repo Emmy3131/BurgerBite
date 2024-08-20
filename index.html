@@ -6,51 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger</title>
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-logo-container">
-                <div class="nav-logo-box">
-                    <i class="fa  fa-burger solid brand"></i>
-                    <h1 class="brand">
-                        BurgerBite
-                    </h1>
+    <!--Navigation Start-->
+    <nav class="nav">
+        <div class="nav-logo-container">
+            <div class="nav-logo-box">
+                <i class="fa  fa-burger solid brand"></i>
+                <h1 class="brand brand-header">
+                    BurgerBite
+                </h1>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="btn-container">
+            <button class="btn btn-blue">
+                <i class="fa-solid fa-bicycle "></i>Order Now
+            </button>
+            <button class="btn btn-orange">
+                <i class="fa-solid fa-briefcase"></i>
+            </button>
+        </div>
+    </nav>
+    <!--Navigation End-->
+
+    <div class="hero">
+       
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide  hero-slide-1 hero-slide">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="hero-image-box">
+                            <img class="hero-image" src="image/b1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="hero-text-box">
+                            <h2 class="hero-heading-sub">
+                                Testy Burger
+                            </h2>
+                            <h1 class="hero-heading-main G-color">
+                                TOP BURGERS
+                            </h1>
+                            <P class="hero-para G-color">
+                                When you think of where to have a new test and best of it all try our amazing burgerbite 
+                                we make sure u enjoy every bite you take without regreting your expensis
+                                thank you for trusying our delicious burgerbite
+                            </P>
+                        </div>
+                        <a class="btn btn-green">
+                            <i class="fa-solid fa-bicycle"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-shape-divider-bottom-1724099659">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                
+            </div>
+            <div class="swiper-slide  hero-slide-2 hero-slide">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="hero-image-box">
+                            <img class="hero-image" src="image/b1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="hero-text-box">
+                            <h2 class="hero-heading-sub">
+                                Testy Burger
+                            </h2>
+                            <h1 class="hero-heading-main G-color">
+                                TOP BURGERS
+                            </h1>
+                            <P class="hero-para G-color">
+                                When you think of where to have a new test and best of it all try our amazing burgerbite 
+                                we make sure u enjoy every bite you take without regreting your expensis
+                                thank you for trusying our delicious burgerbite
+                            </P>
+                        </div>
+                        <a class="btn btn-grey">
+                            <i class="fa-solid fa-bicycle"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-shape-divider-bottom-1724099659">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <section class="choice-section">
+        <div class="choice-container">
+            <div class="choice-header-box">
+                <h1 class="primary-header">
+                    BURGERS MADE WITH LOVE AND <span class="h1-care">CARE</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="choice-content-container">
+                        <img src="image/f1.webp" class="choice-image" alt="">
+                        <h3 class="choice-sub-header choice-sub-text">
+                            Our Burger
+                        </h3>
+                        <p class="choice-para choice-sub-text">
+                            Experience the joy of biting into our signature burger, crafted with premium ingredients and
+                             a whole lot of love. Every bite promises a burst of flavor that will leave you wanting more.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="choice-content-container">
+                        <img src="image/f2.webp" class="choice-image" alt="">
+                        <h3 class="choice-sub-header choice-sub-text">
+                            Your Opinion Is Important
+                        </h3>
+                        <p class="choice-para choice-sub-text">
+                            We value your feedback and strive to make each dining experience unforgettable. 
+                            Share your thoughts with us and help us continue to serve you the best burgers in town.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="choice-content-container">
+                        <img src="image/f3.webp" class="choice-image" alt="">
+                        <h3 class="choice-sub-header choice-sub-text">
+                            Chicken Burgers
+                        </h3>
+                        <p class="choice-para choice-sub-text">
+                            Delight in our mouth-watering chicken burgers, where 
+                            juicy chicken meets a perfect blend of spices and fresh toppings. A true treat for chicken lovers!
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="btn-container">
-                <button class="btn btn-blue">
-                    <i class="fa-solid fa-bicycle brand-1 btn-align"></i>
-                    <h2 class="brand-1 btn-align">
-                        Order Now
-                    </h2>
-                </button>
-                <button class="btn btn-half btn-orange">
-                    <i class="fa-solid fa-briefcase btn-align"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </section>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
