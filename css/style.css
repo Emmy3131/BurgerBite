@@ -283,14 +283,35 @@ html{
     background-color: #fff;
     border-radius: 7px;
 }
-.beefy-bite-image{
-    width: 200px;
+.beefy-image-box{
+    max-width: 200px;
     height: 200px;
-    padding: 10px 0;
+    padding: 15px 0;
+    
+}
+.beefy-bite-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+    
 }
 .best-product-subtitle{
-    color: rgb(209, 192, 192);
+    font-weight: lighter;
 }
 .best-product-subtitle-bold{
     font-weight: 800;
+    font-size: 20px;
+}
+.best-product-star-icon{
+    color: #f97316;
+    padding: 10px 0;
+}
+.best-product-para{
+    word-spacing: 5px;
+}
+.best-product-coin{
+    font-weight: 900;
+    font-size: 20px;
 }
