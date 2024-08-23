@@ -252,7 +252,9 @@ html{
 .choice-content-container:hover{
     background-color: #fff;
 }
-
+.choice-product-roll{
+    padding-top: 50px;
+}
 .choice-image{
     width: 100%;
     height: 200px;
