@@ -266,3 +266,31 @@ html{
     text-align: center;
     padding-bottom: 10px;
 }
+
+
+/*----------best-product-section-----*/
+
+.best-product-section{
+    background-color:  rgb(209, 192, 192);
+}
+.best-product-container{
+    padding: 200px;
+    
+}
+.best-product-text-box{
+    width: 250px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.beefy-bite-image{
+    width: 200px;
+    height: 200px;
+    padding: 10px 0;
+}
+.best-product-subtitle{
+    color: rgb(209, 192, 192);
+}
+.best-product-subtitle-bold{
+    font-weight: 800;
+}
