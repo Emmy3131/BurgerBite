@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 html{
-    font-family: Roboto, sans-serif;;
+    font-family: Roboto, sans-serif;
+
+}
+section{
+    padding: 100px 0;
 }
 :root{
     --primary-color: #f74424;
     --primary-color-dark: #172554;
     --primary-color-hover-green: green;
     --primary-color-hover-1: #f97316;
+    --primary-back-color: #f4f1ea;
     --secondary-color:#ff8a5b;
     --color-grey:#f4f4f4;
     --darker-grey:#f4f4f4;
@@ -131,25 +136,45 @@ html{
 .btn-orange:hover{
     background-color: var(--primary-color-hover-green);
 }
+.form-btn-link{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.form-btn{
+    width: 100%;
+    background-color: #172554;
+    border-radius: 10px; 
+}
+.form-btn:hover{
+    background-color: #f74424;
+}
 
 /*-------------swipe-section------*/
 .swiper {
-    height: 100vh;
+    /* height: 100vh; */
   }
   /*---------------Reusable-Component---------*/
-  .row::after{
+.row::after{
     content: "";
     display: table;
     clear: both;
 }
 
+/* .row:not(:last-child){
+    
+    margin-left: 30px;
+} */
 .row{
-    margin-top: 80px;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .row [class^="col-"]{
     float: left;
 }
+
 
 .row [class^="col-"]:not(:last-child){
     margin-right: 30px;
@@ -162,6 +187,10 @@ html{
     width: calc((100% - 2 * 30px) / 3);
 }
 
+.row .col-1-of-4{
+    width: calc((100% - 3 * 30px) / 4);
+}
+
 /*--------------hero-section-------*/
 
 .hero{
@@ -170,7 +199,7 @@ html{
 }
 .hero-slide{
     position: relative;
-    height: 88vh;
+    /* height: 88vh; */
 }
 .hero-slide-1{
     background-color: #172554;
@@ -228,16 +257,17 @@ html{
 /*--------choice-section----*/
 
 .choice-section{
-    background-color: rgb(209, 192, 192);
+    background-color: var(--primary-back-color);
 }
 .choice-header-box{
     width: 500px;
     margin: 0 auto;
+    padding: 50px 0;
 }
 .primary-header{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 800;
 }
 .h1-care{
     color: var(--primary-color);
@@ -252,9 +282,6 @@ html{
 .choice-content-container:hover{
     background-color: #fff;
 }
-.choice-product-roll{
-    padding-top: 50px;
-}
 .choice-image{
     width: 100%;
     height: 200px;
@@ -268,19 +295,24 @@ html{
     text-align: center;
     padding-bottom: 10px;
 }
+.choice-product-roll{
+    padding-top: 50px;
+}
 
 
 /*----------best-product-section-----*/
 
 .best-product-section{
-    background-color:  rgb(209, 192, 192);
+    background-color: var(--primary-back-color);
+    padding-top: 0;
 }
-.best-product-container{
-    padding: 200px;
-    
+
+.burgerSwiper{
+    max-width: 1140px;
+    margin: 0 auto;
 }
+
 .best-product-text-box{
-    width: 250px;
     padding: 25px;
     background-color: #fff;
     border-radius: 7px;
@@ -295,8 +327,6 @@ html{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 2px solid black;
-    border-radius: 20px;
     
 }
 .best-product-subtitle{
@@ -307,7 +337,7 @@ html{
     font-size: 20px;
 }
 .best-product-star-icon{
-    color: #f97316;
+    color: var(--primary-color-hover-1);
     padding: 10px 0;
 }
 .best-product-para{
@@ -316,5 +346,258 @@ html{
 .best-product-coin{
     font-weight: 900;
     font-size: 20px;
-    color: red;
+    color: var(--primary-color);
+}
+
+/*------------delivery-section-------*/
+.delivery-section{
+    background-color: var(--primary-back-color);
+}
+.delivery-header-box{
+    margin: 0;
+    padding: 30px 0;
+}
+.sec-header{
+    text-align: left;
+    padding: 30px 0;
+    font-size: 50px;
+}
+.delivery-icon{
+    color: var(--primary-color);
+    padding-top: 30px;
+    font-size: 25px;
+}
+.delivery-text{
+    font-weight: 700;
+    font-size: 20px;
+}
+.deliveryParagraph{
+}
+
+/*------------CHEF-section-------*/
+
+.chef-section{
+    background-color: var(--primary-back-color);
+    padding-top: 80px;
+}
+.chef-header{
+    text-align: left;
+}
+.chefs-details-box{
+    /* max-width: 500px; */
+}
+.chefs-about-box{
+    text-align: center;
+    /* padding: 20px 0; */
+}
+.chefs-image{
+    border-radius: 40px;
+}
+.chefs-name{
+    font-size: 35px;
+    font-weight: 800;
+    /* padding-top: 20px; */
+    padding-bottom: 15px;
+}
+.chefs-title{
+    background-color: var(--primary-color-hover-green);
+    width: 120px;
+    margin: 0 auto;
+    padding: 8px;
+    color: #fff;
+}
+.chefs-bio{
+    padding-top: 20px;
+}
+
+/*--------------Reservation-section-------------*/
+
+.Reservation-section{
+    background-color: #000;
+    background-image: url(../image/f2.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
+.Reservation-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.reserv-text-box{
+    color: #fff;
+    padding-top: 50px;
+}
+.reservation-header{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.reserv-para{
+    padding-bottom: 50px;
+    line-height: 30px;
+}
+
+.reserv-icon-box{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 100%;text-align: center;
+    float: left;
+    
+}
+.order-quick-line-number{
+    color: var(--primary-color-hover-1);
+}
+.order-quick-line{
+    font-size: 20px;
+    font-weight: 800;
+}
+.reserv-details::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.reserv-details{
+    max-width: 255px;
+}
+.reserv-icon{
+    line-height: 50px;
+    color: #ccc;
+}
+.reserve-address{
+    float: right;
+}
+.reserv-form-header{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.reserv-form-box{
+    background-color: var(--primary-color-hover-green);
+    padding: 50px;
+    border-radius: 10px;
+}
+.form-icon{
+    font-size: 90px;
+}
+.form-hearder{
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+.form-sub-header{
+    font-size: 25px;
+    font-weight: 700;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    margin: 20px 0;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+}
+.form-sub-half{
+    width: 40%;
+}
+.form-main-half{
+    width: 50%;
+    margin-left: 40px;
+}
+.form-half{
+    display: inline;
+}
+form select option{
+    color: #000;
+    font-weight: 900;
+}
+.subcribe-box{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}.sub-form-box{
+    padding-top: 50px;
+}
+.sub-para{
+    padding-top: 20px;
+
+}
+.subcribe-input{
+    background-color: #c9bfbf;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    width: 70%;
+}
+.sub-inpput-align{
+    display: inline;
+}
+.sub-form-width{
+    
+}
+
+
+/*---------------footer-section--------*/
+.footer-section{
+    background-color: #111827;
+    color: #fff;
+    padding: 70px 0;
+}
+.footer-horizontal-line{
+    border: 1px solid #ccc;
+    width: 88%;
+    margin: 20px auto;
+}
+.footer-copyright{
+    text-align: center;
+}
+.footer-link{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding-top: 20px;
+}
+footer div ul li a:hover{
+    color: #f97316;
+}
+.footer-header{
+    padding-bottom: 20px;
+}
+.footer-para{
+    padding: 15px 0;
+    line-height: 25px;
+}
+.footer-sub-para{
+    padding-bottom: 15px;
+}
+.fa-facebook{
+    color: rgb(76, 173, 185);
+}
+.fa-instagram{
+    color: #f74424;
+}
+.fa-twitter{
+    color: rgb(76, 173, 185);
+}
+.footer-icon{
+    font-size: 30px;
+    padding: 20px 20px 0 0;
+}
+
+
+@media  screen and  (max-width: 900px){
+    .row[class^="col-"]{
+        float: none;
+        width: 100%;
+        margin-right: 0 !important;
+    }
 }
