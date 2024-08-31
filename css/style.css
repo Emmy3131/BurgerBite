@@ -225,6 +225,7 @@ section{
 }
 .hero-para{
     line-height: 40px;
+    padding-bottom: 40px;
 }
 .hero-image{
     width: 100%;
@@ -646,19 +647,7 @@ footer div ul li a:hover{
     .hero-image-box{
         display: none;
     }
-    .hero-slide{
-        height: 60vh !important;
-    }
-    /* .hero-text-box{
-        padding-top: 0 !important;
-        padding-bottom: 50px;
-        max-width: 500px; */
     
-    /* } */
-    /* .hero-image{
-        width: 100%;
-        height: 100%;
-    } */
     .form-sub-half{
         width: 40%;
     }
@@ -667,7 +656,7 @@ footer div ul li a:hover{
         margin-left: 20px !important;
     }
     .hero-slide{
-        height: 110vh;
+        height: 70vh !important;
     }
 
     .custom-shape-divider-bottom-1724099659 svg {
@@ -701,11 +690,9 @@ footer div ul li a:hover{
     }
     .btn-container{
         position: relative;
-        right: 20px;
+        right: 10px;
     }
-    .btn{
-        margin-top: 25px;
-    }
+    
     .brand-header {
         font-size: 15px;
     }
