@@ -674,7 +674,7 @@ footer div ul li a:hover{
     
     
     .row{
-        max-width: 300px;
+        max-width: 290px !important;
         margin: 0 auto;
     }
     .nav-list{
@@ -722,8 +722,22 @@ footer div ul li a:hover{
     .burgerSwiper{
         width: 50%;
     }
-    .custom-shape-divider-bottom-1724099659 svg {
-        /* height: 100px; */
+    .chefs-image{
+        width: 300px;
+    }
+    .form-hearder {
+        font-size: 25px;
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+    .choice-header-box {
+        width: 300px;
+        padding: 40px 0;
+        margin: 0 auto;
+    }
+    .form-main-half {
+        width: 50%;
+        margin-left: 10px !important;
     }
     
 }
