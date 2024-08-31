@@ -21,11 +21,10 @@ section{
     --darker-grey:#f4f4f4;
     --column-gutter: ;
 }
+
 .nav{
-    margin: 0 40px;
-    padding: 20px;
-}
-.nav-content-container{
+    max-width: 1220px;
+    margin: 0 auto;
 }
 .mobile-nav-icon{
     float: right;
@@ -112,6 +111,7 @@ section{
     color: #fff;
     padding: 15px 30px;
     transition: all, 1s;
+    margin-top: 10px;
 }
 
 .btn-container{
@@ -181,18 +181,18 @@ section{
 
 
 .row [class^="col-"]:not(:last-child){
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .row .col-1-of-2{
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 40px) / 2);
 }
 .row .col-1-of-3{
-    width: calc((100% - 2 * 30px) / 3);
+    width: calc((100% - 2 * 40px) / 3);
 }
 
 .row .col-1-of-4{
-    width: calc((100% - 3 * 30px) / 4);
+    width: calc((100% - 3 * 40px) / 4);
 }
 
 /*--------------hero-section-------*/
@@ -277,10 +277,7 @@ section{
     color: var(--primary-color);
 }
 .choice-content-container{
-    width: 350px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 0 solid #e5e7eb;
+    /* padding: 20px; */
     transition: all, 1s; 
 }
 .choice-content-container:hover{
@@ -601,7 +598,7 @@ footer div ul li a:hover{
 /*-----------SCREEN WITH THE MIN-WIDTH OF 900------*/
 @media screen and (max-width: 900px){
     .row{
-        max-width: 500px;
+        max-width: 680px;
     }
     .row [class^="col-"]{
         float: none;
@@ -611,31 +608,38 @@ footer div ul li a:hover{
         margin-right: 0 !important;
         margin-bottom: 30px;
     }
-    .nav {
-        margin: 0;
-        padding: 0;
-        width: 90%;
+    .nav{
+        max-width: 680px;
         margin: 0 auto;
     }
-    .nav-menu {
-        float: none;
-        padding-top: 0;
-        padding-left: 0;
+    .btn-container{
         position: relative;
-        left: 250px;
-        top: -43px; 
+        right: 170px;
+    }
+    .nav-menu {
+        border-radius: 15px;
+        float: none;
+        padding: 30px;
+        position: absolute;
+        background-color: rgb(0, 94, 78);
+        left: -320px;
+        top: 0px; 
+        height: 100vh;
+        z-index: 9999;
     }
     .nav-link{
         font-size: 28px;
+        color: #fff;
     }
     .nav-item:not(:last-child){
         margin-right: 10px;
     }
-    .btn-container{
-       position: relative;
-       bottom: 25px;
-       right: 270px;
+
+    .nav-item {
+        float: none;
+        list-style: none;
     }
+    
     .hero-image-box{
         max-width: 500px;
         height: 500px;
@@ -661,19 +665,21 @@ footer div ul li a:hover{
     .hero-slide{
         height: 110vh;
     }
+
+    .custom-shape-divider-bottom-1724099659 svg {
+        display: none;
+    }
+    .mobile-nav-icon{
+        display: block;
+    }
 }
 
 
-/*-----------SCREEN WITH THE MIN-WIDTH OF 900------*/
+/*-----------SCREEN WITH THE MIN-WIDTH OF 480------*/
 
 @media screen and (max-width: 480px){
-    .nav-menu {
-       background-color: #ccc;
-       border-radius: 15px;
-       position: relative;
-       left: 411px;
-       
-    }
+    
+    
     .row{
         max-width: 300px;
         margin: 0 auto;
@@ -687,19 +693,14 @@ footer div ul li a:hover{
         padding: 0, 5px, 0, 15px;
     }
     .nav {
-        margin: 0 !important;
-        padding: 0 !important;
         width: 90%;
-        margin: 0 auto !important;
     }
-    .mobile-nav-icon{
-        display: block;
-    }
-    .btn-container{
+   
+    /* .btn-container{
         position: relative;
         bottom: 200px;
-        right: 200px;
-     }
+        right: 200px; */
+     /* } */
      .hero-image-box{
         max-width: 300px;
         height: 300px;

@@ -15,7 +15,6 @@ const heroSwiper = new Swiper('.heroSwiper', {
   const burgerSwiper = new Swiper('.burgerSwiper', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
     spaceBetween:40,
   
     // If we need pagination
@@ -25,8 +24,25 @@ const heroSwiper = new Swiper('.heroSwiper', {
     },
     autoplay: {
         delay: 4000
-    }
+    },
 
-    // If we need navigation buttons
+    breakpoints:{
+      0:{
+        slidesPerView: 1
+      },
+      480:{
+        slidesPerView: 1
+      },
+
+      900:{
+        slidesPerView: 2
+      },
+
+      1024:{
+        slidesPerView: 3
+      },
+
+
+    }
     
   });
