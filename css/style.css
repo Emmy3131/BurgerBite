@@ -224,7 +224,7 @@ section{
 
 }
 .hero-para{
-    line-height: 40px;
+    line-height: 30px;
     padding-bottom: 40px;
 }
 .hero-image{
@@ -636,7 +636,7 @@ footer div ul li a:hover{
         display: block;
     }
     .hero-slide{
-        height: 100vh;
+        height: 100vh !important;
     }
     .form-main-half {
         width: 50%;
@@ -739,8 +739,9 @@ footer div ul li a:hover{
     }
     
     .brand-header {
-        font-size: 15px;
+        font-size: 12px;
     }
+    
      .hero-image-box{
         max-width: 300px;
         height: 300px;
@@ -752,8 +753,9 @@ footer div ul li a:hover{
         max-width: 300px;
     }
     .hero-heading-main{
-        font-size: 40px;
+        font-size: 60px;
         font-weight: 800;
+        padding: 15px 0;
     }
     .hero-heading-sub{
         color: yellow;
