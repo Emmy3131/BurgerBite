@@ -27,9 +27,9 @@ const heroSwiper = new Swiper('.heroSwiper', {
     },
 
     breakpoints:{
-      0:{
-        slidesPerView: 1
-      },
+      // 0:{
+      //   slidesPerView: 1
+      // },
       480:{
         slidesPerView: 1
       },
@@ -38,7 +38,7 @@ const heroSwiper = new Swiper('.heroSwiper', {
         slidesPerView: 2
       },
 
-      1024:{
+      1200:{
         slidesPerView: 3
       },
 

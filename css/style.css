@@ -203,7 +203,7 @@ section{
 }
 .hero-slide{
     position: relative;
-    height: 88vh;
+    height: 100vh;
 }
 .hero-slide-1{
     background-color: #172554;
@@ -599,6 +599,51 @@ footer div ul li a:hover{
     padding: 20px 20px 0 0;
 }
 
+
+
+
+/*-----------SCREEN IN LANDSCAP WITH THE MAX-WIDTH OF 1200------*/
+
+@media screen and (max-width: 1200px){
+    .row{
+        max-width: 400px !important;
+        margin: 0 auto;
+    }
+    .row [class^="col-"]{
+        float: none;
+        width: 100%;
+    }
+    .nav-menu {
+        border-radius: 15px;
+        float: none;
+        padding: 30px;
+        position: absolute;
+        background-color: rgb(0, 94, 78);
+        left: -500px;
+        top: 0px; 
+        height: 100vh;
+        z-index: 9999;
+    }
+    .nav{
+        max-width: 900px !important;
+        margin: 0 auto;
+    }
+    .btn-container{
+        position: relative;
+        right: 300px;
+    }
+    .mobile-nav-icon{
+        display: block;
+    }
+    .hero-slide{
+        height: 100vh;
+    }
+    .form-main-half {
+        width: 50%;
+        margin-left: 10px;
+    }
+    
+}
 /*-----------SCREEN WITH THE MIN-WIDTH OF 900------*/
 @media screen and (max-width: 900px){
     .row{
@@ -616,11 +661,7 @@ footer div ul li a:hover{
         max-width: 680px !important;
         margin: 0 auto;
     }
-    .btn-container{
-        position: relative;
-        right: 170px;
-    }
-    .nav-menu {
+    /* .nav-menu {
         border-radius: 15px;
         float: none;
         padding: 30px;
@@ -630,6 +671,10 @@ footer div ul li a:hover{
         top: 0px; 
         height: 100vh;
         z-index: 9999;
+    } */
+    
+    .btn-container{
+        right: 170px;
     }
     .nav-link{
         font-size: 28px;
@@ -662,19 +707,19 @@ footer div ul li a:hover{
     .custom-shape-divider-bottom-1724099659 svg {
         display: none;
     }
-    .mobile-nav-icon{
-        display: block;
-    }
+    
 }
 
 
-/*-----------SCREEN WITH THE MIN-WIDTH OF 480------*/
+
+
+/*-----------SCREEN WITH THE MAX-WIDTH OF 480------*/
 
 @media screen and (max-width: 480px){
     
     
     .row{
-        max-width: 290px !important;
+        max-width: 350px !important;
         margin: 0 auto;
     }
     .nav-list{
