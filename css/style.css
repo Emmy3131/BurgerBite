@@ -451,17 +451,16 @@ section{
 .reserv-icon-box{
     width: 50px;
     height: 50px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-hover-1);
     border-radius: 100%;text-align: center;
     float: left;
     
 }
-.order-quick-line-number{
-    color: var(--primary-color-hover-1);
-}
+
 .order-quick-line{
     font-size: 20px;
     font-weight: 800;
+    color: #fff;
 }
 .reserv-details::after{
     content: "";
@@ -526,10 +525,11 @@ form select option{
     font-weight: 900;
 }
 .subcribe-box{
-    max-width: 50%;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
-}.sub-form-box{
+}
+.sub-form-box{
     padding-top: 50px;
 }
 .sub-para{
@@ -546,6 +546,7 @@ form select option{
 }
 .sub-inpput-align{
     display: inline;
+
 }
 .sub-form-width{
     
@@ -636,11 +637,21 @@ footer div ul li a:hover{
         display: block;
     }
     .hero-slide{
-        height: 100vh !important;
+        min-height: 100vh !important;
     }
     .form-main-half {
-        width: 50%;
-        margin-left: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sub-inpput-align{
+        width: 48%;
+    
+    }
+    .custom-shape-divider-bottom-1724099659 svg {
+        display: none;
+    }
+    .hero-image-box{
+        display: none;
     }
     
 }
@@ -689,16 +700,18 @@ footer div ul li a:hover{
         list-style: none;
     }
     
-    .hero-image-box{
-        display: none;
-    }
+    
     
     .form-sub-half{
         width: 40%;
     }
     .form-main-half{
-        width: 50%;
-        margin-left: 20px !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sub-inpput-align{
+        width: 48%;
+    
     }
     .hero-slide{
         height: 70vh !important;
@@ -785,6 +798,9 @@ footer div ul li a:hover{
     .form-main-half {
         width: 50%;
         margin-left: 10px !important;
+    }
+    .subcribe-box{
+        width: 290px;
     }
     
 }
