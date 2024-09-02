@@ -25,6 +25,11 @@ const heroSwiper = new Swiper('.heroSwiper', {
     autoplay: {
         delay: 3000
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      clickable: true
+    },
 
     breakpoints:{
       // 0:{
