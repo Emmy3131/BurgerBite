@@ -456,7 +456,9 @@ section{
     float: left;
     
 }
-
+.order-quick-number{
+    color: var(--primary-color);
+}
 .order-quick-line{
     font-size: 20px;
     font-weight: 800;
