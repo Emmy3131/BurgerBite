@@ -203,7 +203,7 @@ section{
 }
 .hero-slide{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 .hero-slide-1{
     background-color: #172554;
