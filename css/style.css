@@ -438,6 +438,7 @@ section{
 .reserv-text-box{
     color: #fff;
     padding-top: 50px;
+    position: relative;
 }
 .reservation-header{
     font-size: 35px;
